@@ -118,11 +118,22 @@
 
         #writeToLog(msg) {
 
+             console.log(msg);
+    
+
             msg += "\n";
-            console.log(msg);
+        
             ///TODO: The files should be based on current date.
             // ex: 300124.log
-            fs.appendFile("./log.txt", msg, { encoding: "utf8" }, (err) => { });
+            fs.appendFile("./log.txt", msg, (err) => { 
+                const options = {
+                    day: "long",
+                    year: "numeric",
+                    month: "long",
+
+                }; 
+                const todayDate = Date.toLocaleTimeString("de-DE", options)
+            });
         }
     }
 

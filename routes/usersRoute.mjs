@@ -1,7 +1,7 @@
 import express, { response } from "express";
-import User from "../modules/user.mjs";
+import user from "../modules/user.mjs";
 import { HTTPCodes } from "../modules/httpConstants.mjs";
-import user from "../modules/user.mjs.mjs";
+import SuperLogger from "../modules/SuperLogger.mjs";
 
 
 
