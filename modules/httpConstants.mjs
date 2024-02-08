@@ -24,11 +24,11 @@ class HTTPCodes {
 
 }
 
-export const HTTPMethods = {
+const HTTPMethods = {
     POST : "POST",
     GET: "GET",
     PUT: "PUT",
     PATCH: "PATCH",
     DELETE: "DELETE"
 }
-export default HTTPCodes;
+export {HTTPMethods, HTTPCodes}; 
