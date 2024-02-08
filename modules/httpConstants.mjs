@@ -2,7 +2,7 @@
 // The point of this class is increasing readability and maintainability of the rest of the code. 
 // It should be extended and refactored as needed.
 
-class HttpCodes {
+class HTTPCodes {
 
     static successfulResponse = {
         Ok: 200
@@ -31,4 +31,4 @@ export const HTTPMethods = {
     PATCH: "PATCH",
     DELETE: "DELETE"
 }
-export default HttpCodes;
+export default HTTPCodes;
