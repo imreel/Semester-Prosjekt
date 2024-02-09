@@ -11,3 +11,8 @@
 12:17:37 [33mPOST[39m /user
 12:18:12 [33mPOST[39m /user
 12:19:14 [33mPOST[39m /user
+12:26:09 [32mGET[39m /
+12:26:14 [33mPOST[39m /user
+9:58:25 [32mGET[39m /
+9:58:26 [32mGET[39m /favicon.ico
+9:58:36 [33mPOST[39m /user
