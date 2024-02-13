@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-class user {
-
-    constructor() {
-       
-        this.email;
-        this.pswHash;
-        this.name;
-        this.id;
-=======
 
 import DBManager from "./storageManager.mjs";
 
@@ -34,7 +24,7 @@ const User = function () {
 class User {
 
   constructor() {
-    ///TODO: Are these the correct fields for your project?
+ \
     this.email;
     this.pswHash;
     this.name;
@@ -50,7 +40,6 @@ class User {
       return await DBManager.createUser(this);
     } else {
       return await DBManager.updateUser(this);
->>>>>>> 4d4b091d7eed6f8721edff638585cac126e4bf28
     }
   }
 
@@ -61,4 +50,4 @@ class User {
   }
 }
 
-export default user;
+export default User;

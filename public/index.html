@@ -16,7 +16,6 @@
     </div>
     <script>
 
-<<<<<<< HEAD
     
 const createUserButton = document.getElementById("createUserButton");
 
@@ -49,32 +48,6 @@ async function postTo(url, data) {
     const respon = await fetch(url, header);
     return respon;
 }
-=======
-        const createUserButton = document.getElementById("createUserButton");
-
-        createUserButton.onclick = async function (e) {
-
-            const name = document.getElementById("name").value;
-            const email = document.getElementById("email").value;
-            const pswHash = document.getElementById("pswHash").value;
-            const user = { name, email, pswHash };
-            const respon = await postTo("/user", user);
-
-        }
-
-        async function postTo(url, data) {
-            const header = {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(data),
-            };
-
-            const respon = await fetch(url, header);
-            return respon;
-        }
->>>>>>> 4d4b091d7eed6f8721edff638585cac126e4bf28
 
     </script>
 

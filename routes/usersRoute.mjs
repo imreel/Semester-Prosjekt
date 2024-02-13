@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 import express, { response } from "express";
-import user from "../modules/user.mjs";
-=======
-import express from "express";
 import User from "../modules/user.mjs";
->>>>>>> 4d4b091d7eed6f8721edff638585cac126e4bf28
 import { HTTPCodes } from "../modules/httpConstants.mjs";
 import SuperLogger from "../modules/SuperLogger.mjs";
 

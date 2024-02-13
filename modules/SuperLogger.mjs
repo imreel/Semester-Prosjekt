@@ -25,7 +25,6 @@
     //#endregion
 
 
-<<<<<<< HEAD
     class SuperLogger {
 
         // These are arbetrary values to make it possible for us to sort our logg messages. 
@@ -61,11 +60,6 @@
                 this.#globalThreshold = SuperLogger.LOGGING_LEVELS.NORMAL;
             }
             return SuperLogger.instance;
-=======
-        let logger = new SuperLogger();
-        if (logger.#globalThreshold > logLevl) {
-            return;
->>>>>>> 4d4b091d7eed6f8721edff638585cac126e4bf28
         }
         //#endregion
 
@@ -129,8 +123,7 @@
 
             msg += "\n";
         
-            ///TODO: The files should be based on current date.
-            // ex: 300124.log
+         
             fs.appendFile("./log.txt", msg, (err) => { 
                 const options = {
                     day: "long",
