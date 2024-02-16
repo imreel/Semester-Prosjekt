@@ -1,30 +1,10 @@
 
 import DBManager from "./storageManager.mjs";
 
-/*  
-// If you dont want to use class, this is one alternative
-
-const User = function () {
-  return {
-    email: "",
-    pswHash: "",
-    name: "",
-    id: null,
-    save: Save,
-  };
-
-  function Save() {
-    console.log(this.name);
-  }
-};
-
-}*/
-
-
 class User {
 
   constructor() {
- \
+ 
     this.email;
     this.pswHash;
     this.name;
