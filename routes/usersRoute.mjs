@@ -1,8 +1,10 @@
 import express, { response } from "express";
+import jwt from "jsonwebtoken";
 import User from "../modules/user.mjs";
 import { HTTPCodes } from "../modules/httpConstants.mjs";
 import SuperLogger from "../modules/SuperLogger.mjs";
 import DBManager from "../modules/storageManager.mjs";
+
 
 
 
@@ -94,6 +96,6 @@ const generateAuthData = (result) => {
         };
         token = jwt.sign({currentUser}, process.env.TOKEN_SECRET);
     }
-    return token; 
-}
+    return token;
+};
 export default USER_API
